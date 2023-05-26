@@ -1,0 +1,72 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_dex1",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_dex2",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "udAmount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "usAmount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_owner1",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_owner2",
+				"type": "address"
+			}
+		],
+		"name": "exchange",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "udtok",
+		"outputs": [
+			{
+				"internalType": "contract Token",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "ustok",
+		"outputs": [
+			{
+				"internalType": "contract Token",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
