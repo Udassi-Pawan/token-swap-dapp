@@ -16,6 +16,8 @@
 .token-parent h2 {
   margin-bottom: 6rem;
   font-size: 4rem;
+  font-weight: 400;
+  text-decoration: underline;
 }
 
 .token-parent .inputs {
@@ -29,7 +31,7 @@ input {
   font-size: 2rem;
   border-radius: 1rem;
   border: none;
-  margin: 0.3rem;
+  margin: 0.6rem;
   padding: 0.3rem 1rem;
   background-color: #c4dfdf;
   color: #333;

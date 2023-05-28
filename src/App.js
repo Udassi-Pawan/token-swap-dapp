@@ -16,7 +16,8 @@ function App() {
 
     const funct = async () => {
       try {
-        accounts = await web3.eth.requestAccounts();
+        accounts =
+          web3.eth.defaultAccount || (await web3.eth.requestAccounts());
       } catch (e) {
         console.log(e);
       }

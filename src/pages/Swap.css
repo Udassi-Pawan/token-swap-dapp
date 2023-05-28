@@ -12,6 +12,7 @@
 
 .swap-parent h1 {
   font-size: 4rem;
+  text-align: center;
 }
 
 .swap-parent .line {
@@ -19,4 +20,9 @@
   background-color: #666;
   height: 80vh;
   border-radius: 0.8rem;
+  margin: 2rem;
+}
+
+button {
+  cursor: pointer;
 }

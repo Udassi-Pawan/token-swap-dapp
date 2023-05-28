@@ -11,7 +11,9 @@ const Homepage = () => {
   const [accounts, setAccounts] = useState();
   useEffect(() => {
     const func = async () => {
-      setAccounts(await web3.eth.requestAccounts());
+      setAccounts(
+        web3.eth.defaultAccount || (await web3.eth.requestAccounts())
+      );
       if (accounts)
         setBalanceA(await tokenAInstance.methods.balanceOf(accounts[0]).call());
       if (accounts)
@@ -33,8 +35,8 @@ const Homepage = () => {
               <div className="token-modal">
                 <h1>uDtoken</h1>
                 <div className="balance">
+                  <h3>Your Balance:</h3>
                   <h2>{balanceA}</h2>
-                  <h2>your Balance</h2>
                 </div>
               </div>
             </Link>
@@ -44,8 +46,8 @@ const Homepage = () => {
               <div className="token-modal">
                 <h1>uStoken</h1>
                 <div className="balance">
+                  <h3>Your Balance:</h3>
                   <h2>{balanceB}</h2>
-                  <h2>your Balance</h2>
                 </div>
               </div>
             </Link>
@@ -54,7 +56,7 @@ const Homepage = () => {
 
         <div className="swap">
           <Link style={{ textDecoration: "none" }} to="swap">
-            <h1>swap</h1>
+            <h1>Swap Tokens</h1>
           </Link>
         </div>
       </div>
