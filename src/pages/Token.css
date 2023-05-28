@@ -1,0 +1,51 @@
+.token-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem;
+}
+
+.token-parent h1 {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  font-size: 9rem;
+  font-family: "Martel", serif;
+}
+
+.token-parent h2 {
+  margin-bottom: 6rem;
+  font-size: 4rem;
+}
+
+.token-parent .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input {
+  height: 4rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  border: none;
+  margin: 0.3rem;
+  padding: 0.3rem 1rem;
+  background-color: #c4dfdf;
+  color: #333;
+}
+
+.token-parent input:focus {
+  outline: none;
+}
+
+button {
+  font-size: 2rem;
+  margin: 1.3rem 1rem;
+  border: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: #73a9ad;
+}

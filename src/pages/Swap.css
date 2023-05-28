@@ -1,0 +1,22 @@
+.swap-parent {
+  display: flex;
+  justify-content: space-around;
+  margin: 12rem;
+}
+
+.swap-parent .swap-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.swap-parent h1 {
+  font-size: 4rem;
+}
+
+.swap-parent .line {
+  width: 0.3rem;
+  background-color: #666;
+  height: 80vh;
+  border-radius: 0.8rem;
+}
