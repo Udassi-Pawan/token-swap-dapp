@@ -28,9 +28,10 @@ body {
 }
 
 .homepage-parent .left h2 {
-  font-size: 4rem;
+  font-size: 5rem;
   margin-left: 3rem;
   color: #73a9ad;
+  font-family: "Righteous", cursive;
 }
 .homepage-parent .left h1 {
   margin: 1rem;
