@@ -166,7 +166,7 @@ const TokenB = ({ konsa }) => {
             <div>
               <input
                 ref={buyValue}
-                placeholder="Tokens in multiples of 10"
+                placeholder="Tokens in multiples of 20"
               ></input>
               <button onClick={buyHandler}>Buy</button>
             </div>
